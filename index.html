@@ -8,11 +8,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Sukurti kontaktų formą.
-  1. Kontaktų formoje turi būti šie laukeliai:-->
-    <h1>hello</h1>
+    <h1>Hello</h1>
+    <p>Do not remove h1 element!!!!</p>
+
+    <form id="search-form">
+      <input type="text" name="search" id="search-input" />
+
+      <select name="variations" id="search-variations">
+        <option value="name">Name</option>
+        <option value="surname">Surname</option>
+        <option value="group">Group</option>
+        <option value="age">Age</option>
+        <option value="it-knowledge">IT Knowledge</option>
+      </select>
+
+      <input type="submit" value="Search" />
+    </form>
+
     <form id="student-form" novalidate>
-      <!-- 1. Tekstinis laukelis vardui (privalomas). -->
       <div class="form-control">
         <label for="student-name">Name:</label>
         <input
@@ -25,7 +38,6 @@
         />
       </div>
 
-      <!-- 2. Tekstinis laukelis pavardei (privalomas). -->
       <div class="form-control">
         <label for="student-surname">Surname:</label>
         <input
@@ -38,7 +50,6 @@
         />
       </div>
 
-      <!-- 3. Skaičiaus laukelis amžiui (privalomas). -->
       <div class="form-control">
         <label for="student-age">Age:</label>
         <input
@@ -51,7 +62,6 @@
         />
       </div>
 
-      <!-- 4. Laukelis įvesti telefono numerį (neprivalomas). -->
       <div class="form-control">
         <label for="student-phone">Phone:</label>
         <input
@@ -64,7 +74,6 @@
         />
       </div>
 
-      <!-- 5. Laukelis įvesti el. paštą (privalomas). -->
       <div class="form-control">
         <label for="student-email">Email:</label>
         <input
@@ -77,7 +86,6 @@
         />
       </div>
 
-      <!-- 6. Range tipo laukelis, kuris skirtas įvertinti savo IT žinias nuo 1 iki 10. Galimas vertinimas tik sveikiems skaičiams. -->
       <div class="form-control">
         <label for="student-it-knowledge">IT Knowledge:</label>
         <input
@@ -89,8 +97,6 @@
         />
         <output id="it-knowledge-output">5</output>
       </div>
-
-      <!-- 7. Radio tipo laukeliai, kuriuose pasirenkamas grupės numeris. Turi būti galimybė pasirinkti grupes nuo FEU 1gr. iki FEU 5gr. -->
 
       <fieldset>
         <legend>Pick your group:</legend>
@@ -170,8 +176,6 @@
           <label for="interest5">Node.js</label>
         </div>
       </fieldset>
-
-      <!-- 4. Formoje pridėti „checkbox" tipo input'ą, kuriame pateikta galimybę rinktis iš dominančių programavimo kalbų. -->
 
       <input type="submit" value="Create Student" />
     </form>

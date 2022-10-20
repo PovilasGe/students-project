@@ -18,13 +18,6 @@ let userAccess = document.querySelector('#user-access');
 let submitButton = document.querySelector('#submit-button');
 
 userAccess.addEventListener('change', () => {
-  // submitButton.toggleAttribute('disabled');
-
-  // if (submitButton.hasAttribute('disabled')) {
-  //   submitButton.removeAttribute('disabled');
-  // } else {
-  //   submitButton.setAttribute('disabled', true);
-  // }
 
   toggleLoginButton();
 })
@@ -50,9 +43,6 @@ loginForm.addEventListener('submit', (event) => {
   let name = event.target.elements.name.value;
   let password = event.target.elements.password.value;
 
-  // let matchedUser = users.filter(user => {
-  //   return user.userName === name && user.userPassword === password;
-  // });
 
   let matchedUser = users.filter(user => user.userName === name && user.userPassword === password);
 

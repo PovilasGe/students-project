@@ -1135,34 +1135,6 @@ function renderCarOptionElements(data) {
 
 }
 
-
-// let minPriceInput = document.querySelector('#min-price');
-// minPriceInput.value = localStorage.getItem('min-price');
-// minPriceInput.addEventListener('input', () => {
-//   localStorage.setItem('min-price', minPriceInput.value);
-// });
-
-
-// let maxPriceInput = document.querySelector('#max-price');
-// maxPriceInput.value = localStorage.getItem('max-price');
-// maxPriceInput.addEventListener('input', () => {
-//   localStorage.setItem('max-price', maxPriceInput.value);
-// });
-
-
-// let minYear = document.querySelector('#min-year');
-// minYear.value = localStorage.getItem('min-year');
-// minYear.addEventListener('input', () => {
-//   localStorage.setItem('min-year', minYear.value);
-// });
-
-
-// let maxYear = document.querySelector('#max-year');
-// maxYear.value = localStorage.getItem('max-year');
-// maxYear.addEventListener('input', () => {
-//   localStorage.setItem('max-year', maxYear.value);
-// });
-
 function checkSimpleInput(id) {
   let input = document.getElementById(id);
   input.value = localStorage.getItem(id);
@@ -1170,12 +1142,6 @@ function checkSimpleInput(id) {
     localStorage.setItem(id, input.value);
   });
 }
-
-// checkSimpleInput('max-year');
-// checkSimpleInput('min-year');
-// checkSimpleInput('min-price');
-// checkSimpleInput('max-price');
-// checkSimpleInput('color');
 
 let simpleInputIds = ['max-year', 'min-year', 'min-price', 'max-price', 'color'];
 simpleInputIds.map(id => checkSimpleInput(id));
